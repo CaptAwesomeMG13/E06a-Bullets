@@ -97,7 +97,6 @@ class Window(arcade.Window):
                     e.kill()
                     self.score += KILL_SCORE
 
-
     def on_draw(self):
         arcade.start_render()
         arcade.draw_text(str(self.score), 20, SCREEN_HEIGHT - 40, open_color.white, 16)
@@ -122,7 +121,7 @@ def main():
     window = Window(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
     window.setup()
     arcade.run()
-
+    
 
 if __name__ == "__main__":
     main()
